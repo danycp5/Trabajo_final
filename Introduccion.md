@@ -18,7 +18,8 @@ El empleo de antibióticos, la exposición a ambientes sanitarios con alta incid
 La infección causada por *Staphylococcus aureus* es de gran importancia clínica y representa un desafío significativo para la salud pública. La presencia de *S. aureus* resistente a la meticilina dificulta el tratamiento de infecciones graves, lo que resulta en un aumento de la morbilidad, mortalidad y costos adicionales. Además, contribuye significativamente a la carga de resistencia a los antimicrobianos.
 
 ## OBJETIVOS
-## FLUJO DE TRABAJO 
+## FLUJO DE TRABAJO
+[Pipeline](https://app.diagrams.net/#Hdanycp5%2FTrabajo_final%2Fpipeline%2FDiagrama%20sin%20t%C3%ADtulo.drawio#%7B%22pageId%22%3A%22lsY_AHojMyWDu4EsEvxC%22%7D)
 ## REFERENCIAS
 +Waterlow NR, Cooper BS, Robotham JV, Knight GM. Antimicrobial resistance prevalence in bloodstream infection in 29 European countries by age and sex: An observational study. PLoS Med. 2024 Mar 14;21(3):e1004301. doi: 10.1371/journal.pmed.1004301. PMID: 38484006; PMCID: PMC10939247
 +Gagliotti C, Högberg LD, Billström H, Eckmanns T, Giske CG, Heuer OE, et al. Infecciones del torrente sanguíneo por Staphylococcus aureus: tendencias divergentes de aislados resistentes y susceptibles a la meticilina, UE/EEE, 2005 a 2018. Eur Secur. 2021 18 de noviembre ; 26 ( 46 ): 2002094. doi: 10.2807/1560-7917.ES.2021.26.46.2002094

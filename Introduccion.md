@@ -30,7 +30,7 @@ La infección causada por *Staphylococcus aureus* es de gran importancia clínic
 ## FLUJO DE TRABAJO
 [Pipeline](https://app.diagrams.net/#Hdanycp5%2FTrabajo_final%2Fpipeline%2FDiagrama%20sin%20t%C3%ADtulo.drawio#%7B%22pageId%22%3A%22lsY_AHojMyWDu4EsEvxC%22%7D)
 ## REFERENCIAS
-+Waterlow NR, Cooper BS, Robotham JV, Knight GM. Antimicrobial resistance prevalence in bloodstream infection in 29 European countries by age and sex: An observational study. PLoS Med. 2024 Mar 14;21(3):e1004301. doi: 10.1371/journal.pmed.1004301. PMID: 38484006; PMCID: PMC10939247
-+Gagliotti C, Högberg LD, Billström H, Eckmanns T, Giske CG, Heuer OE, et al. Infecciones del torrente sanguíneo por Staphylococcus aureus: tendencias divergentes de aislados resistentes y susceptibles a la meticilina, UE/EEE, 2005 a 2018. Eur Secur. 2021 18 de noviembre ; 26 ( 46 ): 2002094. doi: 10.2807/1560-7917.ES.2021.26.46.2002094
-+Grupo de Trabajo EPINE. Prevalencia de las infecciones nosocomiales en los hospitales españoles EPINE 1990-1994.
++ Waterlow NR, Cooper BS, Robotham JV, Knight GM. Antimicrobial resistance prevalence in bloodstream infection in 29 European countries by age and sex: An observational study. PLoS Med. 2024 Mar 14;21(3):e1004301. doi: 10.1371/journal.pmed.1004301. PMID: 38484006; PMCID: PMC10939247
++ Gagliotti C, Högberg LD, Billström H, Eckmanns T, Giske CG, Heuer OE, et al. Infecciones del torrente sanguíneo por Staphylococcus aureus: tendencias divergentes de aislados resistentes y susceptibles a la meticilina, UE/EEE, 2005 a 2018. Eur Secur. 2021 18 de noviembre ; 26 ( 46 ): 2002094. doi: 10.2807/1560-7917.ES.2021.26.46.2002094
++ Grupo de Trabajo EPINE. Prevalencia de las infecciones nosocomiales en los hospitales españoles EPINE 1990-1994.
 Barcelona: Vaqué Rafart J. (ed.), 1995.

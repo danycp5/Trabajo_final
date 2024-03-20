@@ -24,7 +24,8 @@ La infección causada por *Staphylococcus aureus* es de gran importancia clínic
 
 ## OBJETIVOS
 + Evaluar la calidad de las secuecuencias de *Staphylococcus aureus* mediante la herramienta virtual Galaxy.
-+ Interpretar los resultados obtenidos de la herramienta virtual Bakta.
++ Emplear la herramienta virtual Bakta para modificar la secuencia de *Staphylococcus aureus*.
++ Interpretar los resultados obtenidos del analisis de calidad
 + Elaborar el ensamblaje de la secuencia 
   
 ## FLUJO DE TRABAJO

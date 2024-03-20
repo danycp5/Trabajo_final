@@ -23,8 +23,10 @@ al.,1997).
 La infección causada por *Staphylococcus aureus* es de gran importancia clínica y representa un desafío significativo para la salud pública. La presencia de *S. aureus* resistente a la meticilina dificulta el tratamiento de infecciones graves, lo que resulta en un aumento de la morbilidad, mortalidad y costos adicionales. Además, contribuye significativamente a la carga de resistencia a los antimicrobianos.
 
 ## OBJETIVOS
-+
-+ Evaluar la anotación del genoma de *Staphylococcus aureus*
++ Evaluar la clidad de las secuecuencias *Staphylococcus aureus* obtenidas.
++ Evaluar la anotación del genoma de *Staphylococcus aureus*.
++ Procesar los resultados Bakta.
+  
 ## FLUJO DE TRABAJO
 [Pipeline](https://app.diagrams.net/#Hdanycp5%2FTrabajo_final%2Fpipeline%2FDiagrama%20sin%20t%C3%ADtulo.drawio#%7B%22pageId%22%3A%22lsY_AHojMyWDu4EsEvxC%22%7D)
 ## REFERENCIAS

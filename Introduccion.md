@@ -28,9 +28,12 @@ La infección causada por *Staphylococcus aureus* es de gran importancia clínic
 + Interpretar los resultados obtenidos.
     
 ## FLUJO DE TRABAJO
+
 [Pipeline](https://app.diagrams.net/#Hdanycp5%2FTrabajo_final%2Fpipeline%2FDiagrama%20sin%20t%C3%ADtulo.drawio#%7B%22pageId%22%3A%22lsY_AHojMyWDu4EsEvxC%22%7D)
 
 ## MÉTODOLOGÍA
+Priemro se utilizó la base de datos NCBI para buscar la secuencia cruda de *Staphylococcus aureus*, después se a
+
 ## RESULTADOS
 ## CONCLUSIONES
 

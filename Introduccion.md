@@ -32,9 +32,25 @@ La infección causada por *Staphylococcus aureus* es de gran importancia clínic
 [Pipeline](https://app.diagrams.net/#Hdanycp5%2FTrabajo_final%2Fpipeline%2FDiagrama%20sin%20t%C3%ADtulo.drawio#%7B%22pageId%22%3A%22lsY_AHojMyWDu4EsEvxC%22%7D)
 
 ## MÉTODOLOGÍA
-Priemro se utilizó la base de datos NCBI para buscar la secuencia cruda de *Staphylococcus aureus*, después se a
+Priemro se utilizó la base de datos NCBI para buscar la secuencia cruda de *Staphylococcus aureus*, después se realizó el analisis de calidad utilizando fastqc. 
+Una vez analizada la calidad, se prosedió a utilizar la herramienta galaxy, en la cual se cambió el nombre a historial como se observa en la figura 1. 
+!....
+
+Seguido, se cargó la secuencia a la plataforma como se observa en la figura 2 y se realizó la configuración de la herramienta Bakta, la cual consistió en ir a  "Opciones de entrada/salida": y dar clicc en  "La base de datos de bakta" y seleccionar, la más reciente "La base de datos de amrfinderplus". despues en la más reciente Archivo de parámetros "Seleccionar genoma en formato fasta": Archivo de contig En "Anotación opcional": "Mantener encabezado original del contig (--keep-contig-headers)": S ( ver figura 3).
+!...
+!...
+
+Para configurar los output en la herramienta bakta, se dió clic en "Selección de los archivos de salida": "Selección de archivos de salida": Archivo de anotación en TSV Anotación y secuencia en GFF3 Secuencias de nucleótidos de características como FASTA Resumen como TXT Gráfico del resultado de la anotación como SVG. Como se observa en la figura 4
+
+
 
 ## RESULTADOS
+
+En la herramienta bakta, como se observa en la figura 5, se obtuvieron 44 contigs como entrada con una duración del borrador del genoma de 2.911.349 pb, un poco más corto que los 2.914.567 pb esperados, además, se encontró 2.717 CDS, un poco más que los 2.704 CDS esperados y de proteínas pequeñas 5 SORF, también, se encontró otros componetes como: 
+![image](https://github.com/danycp5/Trabajo_final_Omicas_G2/assets/163198034/3babcc7c-bbf9-4ca9-b716-bea4322e3c21)
+
+
+
 ## CONCLUSIONES
 
 

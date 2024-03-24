@@ -13,6 +13,8 @@
 
 *Staphylococcus aureus* es la especie patógena más prominente dentro de su género y es responsable de muchas infecciones, tanto adquiridas en la comunidad como en entornos hospitalarios. El enfoque actual en el estudio de este microorganismo se debe a su alta incidencia y a su capacidad de causar brotes de infecciones nosocomiales, especialmente cuando se trata de cepas resistentes a la meticilina. 
 
+La anotación genómica implica describir la estructura y función de los componentes genómicos mediante su predicción, análisis e interpretación para entender sus implicaciones biológicas. Esto incluye la identificación de la ubicación de los genes y las regiones codificantes (anotación estructural) junto con la determinación de sus roles biológicos (anotación funcional). Como ejemplo, consideramos el proceso de anotación de un genoma bacteriano utilizando el ensamblaje de genoma bacteriano basado en datos de secuenciación de cepas de *Staphylococcus aureus* resistentes a la meticilina aisladas en Japón.
+
 ## ANTECEDENTES
 La resistencia a los antibioticos representa una prioridad en la salud pública a nivel mundial. Entender su impacto frente a los importantes cambios demográficos que están ocurriendo globalmente es una área de conocimiento esencial que requiere ser abordada. Según estimaciones de la Organización Mundial de la Salud, se prevé que para el año 2050 una de cada cinco personas en el mundo tendrá 60 años o más. Es sabido que la incidencia de infecciones bacterianas aumenta con la edad y varía según el género. El incremento de las infecciones en grupos etarios avanzados resulta en una mayor exposición a los antibióticos y un mayor contacto con ambientes médicos, los cuales son reconocidos como puntos críticos de transmisión de bacterias resistentes. Sin embargo, no se observa un aumento simple de la resistencia en todos los patógenos según la edad. Comprender cómo estas interacciones impulsan la dinámica de las infecciones resistentes a los medicamentos es crucial para entender la mejor manera de abordar la resistencia a antibioticos (walterlow NR, et al., 2024).
 
@@ -33,15 +35,15 @@ La infección causada por *Staphylococcus aureus* es de gran importancia clínic
 [Pipeline](https://app.diagrams.net/#Hdanycp5%2FTrabajo_final%2Fpipeline%2FDiagrama%20sin%20t%C3%ADtulo.drawio#%7B%22pageId%22%3A%22lsY_AHojMyWDu4EsEvxC%22%7D)
 
 ## MÉTODOLOGÍA
-Priemro se utilizó la base de datos NCBI para buscar la secuencia cruda de *Staphylococcus aureus*, después se realizó el analisis de calidad utilizando fastQc (figura 1) 
-Una vez analizada la calidad, se prosedió a utilizar la herramienta galaxy, en la cual se cambió el nombre a historial como se observa en la figura 2. 
+Primero se utilizó la base de datos NCBI para buscar la secuencia cruda de *Staphylococcus aureus*, después se realizó el analisis de calidad utilizando fastQc (figura 1) 
+Una vez analizada la calidad, se procedió a utilizar la herramienta galaxy, en la cual se cambió el nombre a historial como se observa en la figura 2. 
 
 ![Cambio_ de_nombre](imagenes/1.jpg)
 
 
 
 
-Seguido, se cargó la secuencia a la plataforma como se observa en la figura 2 y se realizó la configuración de la herramienta Bakta, la cual consistió en ir a  "Opciones de entrada/salida": y dar clic en  "La base de datos de bakta" y seleccionar, la más reciente "La base de datos de amrfinderplus". despues en la más reciente Archivo de parámetros "Seleccionar genoma en formato fasta": Archivo de contig En "Anotación opcional": "Mantener encabezado original del contig (--keep-contig-headers)": S ( ver figura 3).
+Seguido, se cargó la secuencia a la plataforma como se observa en la figura 2 y se realizó la configuración de la herramienta Bakta, la cual consistió en ir a  "Opciones de entrada/salida": y dar clic en  "La base de datos de bakta" y seleccionar la más reciente "La base de datos de amrfinderplus". Después, en la más reciente Archivo de parámetros "Seleccionar genoma en formato fasta": Archivo de contig En "Anotación opcional": "Mantener encabezado original del contig (--keep-contig-headers)": S ( ver figura 3).
 
 ![carga_de_scuencia](imagenes/2.jpg)
 
@@ -51,18 +53,18 @@ Para configurar los output en la herramienta bakta, se dió clic en "Selección 
 
 ![Configuracion_output](imagenes/4.jpg)
 
-Posteriormente, se realizó el analisis de la secuencia en archirvo fasta y se hizo un resumen de las anotaciones como TSV simples y legibles por humanos. Seguidamente, se realizó la anotación de la secuencia en GFF3 para describir genes y otras características de secuencias biológicas.
+Posteriormente, se realizó el análisis de la secuencia en archirvo fasta y se hizo un resumen de las anotaciones como TSV simples y legibles por humanos. Seguidamente, se realizó la anotación de la secuencia en GFF3 para describir genes y otras características de secuencias biológicas.
 
-Bakta ofrece una cantidad considerable de datos, principalmente relacionados con CDS o  ARNy, sin embargo, es probable que algunas anotaciones estructurales importantes, como los plásmidos, no estén incluidas es por eso que se realizó la identificación de plásmidos en los contigs previamente realizados, para esto se utilizó al herramienta **PlasmidFinder** (figura 10).
+Bakta ofrece una cantidad considerable de datos, principalmente relacionados con CDS o  ARNy, sin embargo, es probable que algunas anotaciones estructurales importantes, como los plásmidos, no estén incluidas es por eso que se realizó la identificación de plásmidos en los contigs previamente realizados, para esto se utilizó la herramienta **PlasmidFinder** (figura 10).
 
 ![Identificacio_plasmidfinder](imagenes/10.jpg)
 
-Después, se utilizó el archivo plasmid.fasta que que contenía las secuencias que mejor coincidian del genoma utilizado y el archivo hit_in_genome.fasta ue contenía los genes plasmídicos que mejor coincidián de la base de datos ( figura 15)
+Después, se utilizó el archivo plasmid.fasta que contenía las secuencias que mejor coincidian del genoma utilizado y el archivo hit_in_genome.fasta ue contenía los genes plasmídicos que mejor coincidián de la base de datos ( figura 15).
 
 ![deteccion_integrones](imagenes/15.jpg) 
 
 Se utilizó la herramienta IntegronFinder para detectar integrones y ISEScan para detectar los elementos IS ( secuencia de inserción) los cuales estan presentes en la anotación estructural adicional de la bacteria.
-Para la visualización de la anotación se utilizó lasidendificadas por Bakta, las secuencias de plásmidos identificadas por PlasmidFinder, los integrones identificados por IntegronFinder y los elementos IS identificados por ISEscan. Se utilizó la herramienta JBrowse, la cual necesitó que los archivos anteriormente mencionados esten en formato GFF y para esto se formateó las salidas de las secuerncias de los integrones y plasmidos como se muestra en las figuras 24-30.
+Para la visualización de la anotación se utilizó las idendificadas por Bakta, las secuencias de plásmidos identificadas por PlasmidFinder, los integrones identificados por IntegronFinder y los elementos IS identificados por ISEscan. Se utilizó la herramienta JBrowse, la cual necesitó que los archivos anteriormente mencionados esten en formato GFF y para esto se formateó las salidas de las secuerncias de los integrones y plasmidos como se muestra en las figuras 24-30.
 
 ![visualización_anotacion](imagenes/24.jpg) ![visualización_anotacion](imagenes/25.jpg) ![visualización_anotacion](imagenes/26.jpeg) ![visualización_anotacion](imagenes/27.jpeg)![visualización_anotacion](imagenes/28.jpg) ![visualización_anotacion](imagenes/29.jpg)![visualización_anotacion](imagenes/30.jpg)
 
@@ -84,19 +86,19 @@ Se encontró 2.717 CDS, un poco más que los 2.704 CDS esperados y de proteínas
  | mcRNA | 95  | sin información |
 
 
-En el analisis de la secuencia en archivo fasta se observó que exsistieron 2884 secuencias, en las cuales se encontraba ARNt, ARNm, ARNr, ncARN, CDS y SORF ( figura 6).
+En el análisis de la secuencia en archivo fasta se observó que exsistieron 2884 secuencias, en las cuales se encontraba ARNt, ARNm, ARNr, ncARN, CDS y SORF ( figura 6).
 
 ![resultados_nucleotid](imagenes/6.jpg)
 
 
-Además, en el resumen obtenido en las anotaciones se encuentró Sequence Id, Type, Start, Stop, Strand, Locus Tag, Gene, Product, DbXrefs, las cuales contenian 2.916 líneas ( figura 7).
+Además, en el resumen obtenido en las anotaciones se encontró Sequence Id, Type, Start, Stop, Strand, Locus Tag, Gene, Product, DbXrefs, las cuales contenían 2.916 líneas ( figura 7).
 
 ![resultados_summary](imagenes/7.jpg)
 
 Se observó que existe 51k+ (número de líneas en el GFF), como se observa en la figura 8. 
 ![resultados_GFF3](imagenes/8.jpg)
 
-En la figura 9 se visualiza la trama de anotación del genoma circular, en la cual el círculo inicial muestra el contenido de GC en cada ventana deslizante de todas las secuencias, donde el color verde indica valores por encima del promedio y el color rojo indica valores por debajo. En el segundo círculo se muestra la tendencia del contenido de GC en tonos naranja y azul. Además, Se han representado todas las características en dos anillos que muestran la hebra delantera y trasera de afuera hacia adentro, con las secuencias codificantes en gris (los demás colores son complicados de diferenciar).
+En la figura 9 se visualiza la trama de anotación del genoma circular, en la cual el círculo inicial muestra el contenido de GC en cada ventana deslizante de todas las secuencias, donde el color verde indica valores por encima del promedio y el color rojo indica valores por debajo. En el segundo círculo se muestra la tendencia del contenido de GC en tonos naranja y azul. Además, se han representado todas las características en dos anillos que muestran la hebra delantera y trasera de afuera hacia adentro, con las secuencias codificantes en gris (los demás colores son complicados de diferenciar).
 
 ![genoma_circular](imagenes/9.jpg)
 

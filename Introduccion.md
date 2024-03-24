@@ -34,6 +34,8 @@ La infección causada por *Staphylococcus aureus* es de gran importancia clínic
 ## MÉTODOLOGÍA
 Priemro se utilizó la base de datos NCBI para buscar la secuencia cruda de *Staphylococcus aureus*, después se realizó el analisis de calidad utilizando fastqc. 
 Una vez analizada la calidad, se prosedió a utilizar la herramienta galaxy, en la cual se cambió el nombre a historial como se observa en la figura 1. 
+
+
 ![Figura_1](imagenes/1.png)
 
 

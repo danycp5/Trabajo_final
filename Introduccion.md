@@ -1,5 +1,5 @@
 # Tema:
-# Anotación del genoma bacteriano de *Staphylococcus aureus* resistentes a la meticilina 
+# Anotación del genoma bacteriano de *Staphylococcus aureus* resistente a la meticilina 
 
 **Autores:** 
 + Adriana Aguirre
@@ -45,7 +45,9 @@ Para configurar los output en la herramienta bakta, se dió clic en "Selección 
 Posteriormente, se realizó el analisis de la secuencia en archirvo fasta y se hizo un resumen de las anotaciones como TSV simples y legibles por humanos. Seguidamente, se realizó la anotación de la secuencia en GFF3 para describir genes y otras características de secuencias biológicas.
 
 Bakta ofrece una cantidad considerable de datos, principalmente relacionados con CDS o  ARNy, sin embargo, es probable que algunas anotaciones estructurales importantes, como los plásmidos, no estén incluidas es por eso que se realizó la identificación de plásmidos en los contigs previamente realizados, para esto se utilizó al herramienta **PlasmidFinder** (figura 10).
+Después, se utilizó el archivo plasmid.fasta que que contenía las secuencias que mejor coincidian del genoma utilizado y el archivo hit_in_genome.fasta ue contenía los genes plasmídicos que mejor coincidián de la base de datos. ( figura 15)
 
+Se utilizó la herramienta IntegronFinder para detectar integrones los cuales estan presentes en la anotación estructural adicional de la bacteria.
 ## RESULTADOS
 
 En la herramienta bakta, como se observa en la figura 5, se obtuvieron 44 contigs como entrada con una duración del borrador del genoma de 2.911.349 pb, un poco más corto que los 2.914.567 pb esperados, además, se encontró 2.717 CDS, un poco más que los 2.704 CDS esperados y de proteínas pequeñas 5 SORF, también, se encontró otros componetes como: 
@@ -60,8 +62,11 @@ En la figura 9 se visualiza la trama de anotación del genoma circular, en la cu
 Posterior al analisis en la herramienta PlasmidFinder se encontró 5 secuencias de plásmidos, los cuales estaban ubicados de la sigueinte manera: 3	están en contig00019, 1 en contig00002 y 1 en contig00024. 
 Donde todas las secuencias de plásmidos correspondientes a los plásmidos de *Staphylococcus aureus* están todas en contig00019, lo que hace que este contig probablemente sea un plásmido. Además, tiene una longitud de 30.347 pb.
 Así mismo, al comparar las secuencias asociadas con  *Staphylococcus aureus* en NCBI se encontró que CP000737, AP003139 (2 veces) corresponden a plásmidos de *Staphylococcus aureus*, AF503772 corresponde a un plásmido de *Enterococcus faecalis*, CP003584 corresponde a un plásmido de *Enterococcus faecium*.
+
+ Los resultados provenientes de los archivos  plasmid.fasta y el archivo hit_in_genome.fasta se observan en las figuras 13 y 14 respectivamente.
  
 
+Los integrones son componentes genéticos que posibilitan a las bacterias ajustarse y desarrollarse rápidamente mediante la captura y expresión de genes nuevos. Un integron típico consta de un gen que codifica una enzima específica de recombinación (intI), un sitio de recombinación cercano (attI) donde se pueden insertar segmentos de genes, y un controlador de transcripción (Pc) que regula la actividad genética en estos segmentos. Para identificar integrones, se recurre a herramientas como IntegronFinder (Néron et al., 2022). En la figura 16 se puede observar que no se encontró encontrado elementos integrones en ningún contig,x, esto podría deberse ya que el genoma es demasiado estable o a que la calidad del ensamblaje no es lo suficientemente buena y se eliminaron algunas partes útiles para la detección de integrones. 
 
 
 

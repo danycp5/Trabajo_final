@@ -60,8 +60,8 @@ En la herramienta bakta, como se observa en la figura 5, se obtuvieron 44 contig
 | ------------- | ------------- |
 | ARNt | 57 | 61 |
 | ARNm de transferencia | 1 | 1 |
-| ARNr | 9  |5 |
-| mcRNA | 95  |sin información |
+| ARNr | 9  | 5 |
+| mcRNA | 95  | sin información |
 
 
 En el analisis de la secuencia en archivo fasta se observó que exsistieron 2884 secuencias, en las cuales se encontraba ARNt, ARNm, ARNr, ncARN, CDS y SORF ( figura 6). Además, en el resumen obtenido en las anotaciones se encuentró Sequence Id, Type, Start, Stop, Strand, Locus Tag, Gene, Product, DbXrefs, las cuales contenian 2.916 líneas ( figura 7).

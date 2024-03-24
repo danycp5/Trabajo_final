@@ -48,6 +48,8 @@ Bakta ofrece una cantidad considerable de datos, principalmente relacionados con
 Después, se utilizó el archivo plasmid.fasta que que contenía las secuencias que mejor coincidian del genoma utilizado y el archivo hit_in_genome.fasta ue contenía los genes plasmídicos que mejor coincidián de la base de datos. ( figura 15)
 
 Se utilizó la herramienta IntegronFinder para detectar integrones y ISEScan para detectar los elementos IS ( secuencia de inserción) los cuales estan presentes en la anotación estructural adicional de la bacteria.
+Para la visualización de la anotación se utilizó lasidendificadas por Bakta, las secuencias de plásmidos identificadas por PlasmidFinder, los integrones identificados por IntegronFinder y los elementos IS identificados por ISEscan. Se utilizó la herramienta JBrowse, la cual necesitó que los archivos anteriormente mencionados esten en formato GFF y para esto se formateó las salidas de las secuerncias de los integrones y plasmidos como se muestra en las figuras 24-30.
+
 
 ## RESULTADOS
 
@@ -89,6 +91,17 @@ Ademas, como se observa en la figura 22 y 23, la herramienta permitió obtener l
 | contig00027 | 1|
 | contig00032  | 1  |
 | contig00037 | 1 |
+
+Dectectandose también, las diferentes familias del IS ( tabla 3)
+| familia IS  | elemento IS identificado |
+| ------------- | ------------- |
+| IS1182  |4 |
+| IS21|7|
+|IS3 |3 |
+| IS6 | 5|
+| ISL3 | 1  |
+
+En la salida de JBrowse se loggró ver los genes, IS, plásmidos, etc. en los contigs, como se observa en la figura 32.
 
 ## CONCLUSIONES
 

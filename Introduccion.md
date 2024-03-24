@@ -32,18 +32,23 @@ La infección causada por *Staphylococcus aureus* es de gran importancia clínic
 [Pipeline](https://app.diagrams.net/#Hdanycp5%2FTrabajo_final%2Fpipeline%2FDiagrama%20sin%20t%C3%ADtulo.drawio#%7B%22pageId%22%3A%22lsY_AHojMyWDu4EsEvxC%22%7D)
 
 ## MÉTODOLOGÍA
-Priemro se utilizó la base de datos NCBI para buscar la secuencia cruda de *Staphylococcus aureus*, después se realizó el analisis de calidad utilizando fastqc. 
-Una vez analizada la calidad, se prosedió a utilizar la herramienta galaxy, en la cual se cambió el nombre a historial como se observa en la figura 1. 
+Priemro se utilizó la base de datos NCBI para buscar la secuencia cruda de *Staphylococcus aureus*, después se realizó el analisis de calidad utilizando fastQc (figura 1) 
+Una vez analizada la calidad, se prosedió a utilizar la herramienta galaxy, en la cual se cambió el nombre a historial como se observa en la figura 2. 
 
-
+![Cambio_ de_nombre](imagenes/1.png)
 
 
 
 
 Seguido, se cargó la secuencia a la plataforma como se observa en la figura 2 y se realizó la configuración de la herramienta Bakta, la cual consistió en ir a  "Opciones de entrada/salida": y dar clic en  "La base de datos de bakta" y seleccionar, la más reciente "La base de datos de amrfinderplus". despues en la más reciente Archivo de parámetros "Seleccionar genoma en formato fasta": Archivo de contig En "Anotación opcional": "Mantener encabezado original del contig (--keep-contig-headers)": S ( ver figura 3).
-![Figura_1](imagenes/1.png)
-![Figura_2](imagenes/2.png)
+
+![carga_de_scuencia](imagenes/2.png)
+
+![Configuracion_de_bakta](imagenes/3.png)
+
 Para configurar los output en la herramienta bakta, se dió clic en "Selección de los archivos de salida": "Selección de archivos de salida": Archivo de anotación en TSV Anotación y secuencia en GFF3 Secuencias de nucleótidos de características como FASTA Resumen como TXT Gráfico del resultado de la anotación como SVG. Como se observa en la figura 4.
+
+![Configuracion_output](imagenes/4.png)
 
 Posteriormente, se realizó el analisis de la secuencia en archirvo fasta y se hizo un resumen de las anotaciones como TSV simples y legibles por humanos. Seguidamente, se realizó la anotación de la secuencia en GFF3 para describir genes y otras características de secuencias biológicas.
 
@@ -56,7 +61,12 @@ Para la visualización de la anotación se utilizó lasidendificadas por Bakta, 
 
 ## RESULTADOS
 
-En la herramienta bakta, como se observa en la figura 5, se obtuvieron 44 contigs como entrada con una duración del borrador del genoma de 2.911.349 pb, un poco más corto que los 2.914.567 pb esperados, además, se encontró 2.717 CDS, un poco más que los 2.704 CDS esperados y de proteínas pequeñas 5 SORF, también, se encontró otros componetes como: 
+En la herramienta bakta, como se observa en la figura 5, se obtuvieron 44 contigs como entrada con una duración del borrador del genoma de 2.911.349 pb, un poco más corto que los 2.914.567 pb esperados.
+
+![resumen_de_analisis](imagenes/5.png)
+
+
+Se encontró 2.717 CDS, un poco más que los 2.704 CDS esperados y de proteínas pequeñas 5 SORF, también, se encontró otros componetes como: 
 
 | Comonetes  | Bakta | Hikichi et al2019 |
 | ------------- | ------------- |  ------------- |
@@ -66,9 +76,17 @@ En la herramienta bakta, como se observa en la figura 5, se obtuvieron 44 contig
 | mcRNA | 95  | sin información |
 
 
-En el analisis de la secuencia en archivo fasta se observó que exsistieron 2884 secuencias, en las cuales se encontraba ARNt, ARNm, ARNr, ncARN, CDS y SORF ( figura 6). Además, en el resumen obtenido en las anotaciones se encuentró Sequence Id, Type, Start, Stop, Strand, Locus Tag, Gene, Product, DbXrefs, las cuales contenian 2.916 líneas ( figura 7).
+En el analisis de la secuencia en archivo fasta se observó que exsistieron 2884 secuencias, en las cuales se encontraba ARNt, ARNm, ARNr, ncARN, CDS y SORF ( figura 6).
+
+![resultados_nucleotid](imagenes/6.png)
+
+
+Además, en el resumen obtenido en las anotaciones se encuentró Sequence Id, Type, Start, Stop, Strand, Locus Tag, Gene, Product, DbXrefs, las cuales contenian 2.916 líneas ( figura 7).
+
+![resultados_summary](imagenes/7.png)
 
 Se observó que existe 51k+ (número de líneas en el GFF), como se observa en la figura 8. 
+![resultados_GFF3](imagenes/8.png)
 
 En la figura 9 se visualiza la trama de anotación del genoma circular, en la cual el círculo inicial muestra el contenido de GC en cada ventana deslizante de todas las secuencias, donde el color verde indica valores por encima del promedio y el color rojo indica valores por debajo. En el segundo círculo se muestra la tendencia del contenido de GC en tonos naranja y azul. Además, Se han representado todas las características en dos anillos que muestran la hebra delantera y trasera de afuera hacia adentro, con las secuencias codificantes en gris (los demás colores son complicados de diferenciar).
 

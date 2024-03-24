@@ -63,7 +63,7 @@ Después, se utilizó el archivo plasmid.fasta que que contenía las secuencias 
 Se utilizó la herramienta IntegronFinder para detectar integrones y ISEScan para detectar los elementos IS ( secuencia de inserción) los cuales estan presentes en la anotación estructural adicional de la bacteria.
 Para la visualización de la anotación se utilizó lasidendificadas por Bakta, las secuencias de plásmidos identificadas por PlasmidFinder, los integrones identificados por IntegronFinder y los elementos IS identificados por ISEscan. Se utilizó la herramienta JBrowse, la cual necesitó que los archivos anteriormente mencionados esten en formato GFF y para esto se formateó las salidas de las secuerncias de los integrones y plasmidos como se muestra en las figuras 24-30.
 
-![visualización_anotacion](imagenes/24.png)![visualización_anotacion](imagenes/25.png)![visualización_anotacion](imagenes/26.png)![visualización_anotacion](imagenes/27.png)![visualización_anotacion](imagenes/28.png)![visualización_anotacion](imagenes/29.png)![visualización_anotacion](imagenes/30.png)
+[visualización_anotacion](imagenes/24.png)[visualización_anotacion](imagenes/25.png)[visualización_anotacion](imagenes/26.png)[visualización_anotacion](imagenes/27.png)![visualización_anotacion](imagenes/28.png)[visualización_anotacion](imagenes/29.png)[visualización_anotacion](imagenes/30.png)
 
 
 ## RESULTADOS

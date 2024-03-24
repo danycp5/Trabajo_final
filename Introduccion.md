@@ -126,33 +126,32 @@ Además, como se observa en la figura 22 y 23, la herramienta permitió obtener 
 
 ![nucleotidos_ORF](imagenes/22.jpg)![aminoacidos_ORF](imagenes/23.jpg)
 
-
-                                                                    | Contig  | Numero de elemento IS |
-                                                                    | ------------- | ------------- |
-                                                                    | contig00001  | 2  |
-                                                                    | contig00002 | 1 |
-                                                                    | contig00003  | 2  |
-                                                                    | contig00004 | 1 |
-                                                                    | contig00005  | 1  |
-                                                                    | contig00006 | 1 |
-                                                                    | contig00009  | 3  |
-                                                                    | contig00010 | 1|
-                                                                    | contig00011 | 1  |
-                                                                    | contig00012 | 1 |
-                                                                    | contig00019  | 3  |
-                                                                    | contig00027 | 1|
-                                                                    | contig00032  | 1  |
-                                                                    | contig00037 | 1 |
-
+| Contig  | Numero de elemento IS |
+| ------------- | ------------- |
+| contig00001  | 2  |
+| contig00002 | 1 |
+| contig00003  | 2  |
+| contig00004 | 1 |
+| contig00005  | 1  |
+| contig00006 | 1 |
+| contig00009  | 3  |
+| contig00010 | 1|
+| contig00011 | 1  |
+| contig00012 | 1 |
+| contig00019  | 3  |
+| contig00027 | 1|
+| contig00032  | 1  |
+| contig00037 | 1 |
+                                                                  
 
 Dectectandose también, las diferentes familias del IS ( tabla 3)
-                                                                        | familia IS  | elemento IS identificado |
-                                                                        | ------------- | ------------- |
-                                                                        | IS1182  |4 |
-                                                                        | IS21|7|
-                                                                        |IS3 |3 |
-                                                                        | IS6 | 5|
-                                                                        | ISL3 | 1  |
+| familia IS  | elemento IS identificado |
+| ------------- | ------------- |
+| IS1182  |4 |
+| IS21|7|
+|IS3 |3 |
+| IS6 | 5|
+| ISL3 | 1|
 
 En la salida de JBrowse se loggró ver los genes, IS, plásmidos, etc. en los contigs, como se observa en la figura 32.
 

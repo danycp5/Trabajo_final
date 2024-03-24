@@ -57,7 +57,7 @@ En la herramienta bakta, como se observa en la figura 5, se obtuvieron 44 contig
 ![image](https://github.com/danycp5/Trabajo_final_Omicas_G2/assets/163198034/3babcc7c-bbf9-4ca9-b716-bea4322e3c21)
 
 | Comonetes  | Bakta | Hikichi et al2019 |
-| ------------- | ------------- |
+| ------------- | ------------- |  ------------- |
 | ARNt | 57 | 61 |
 | ARNm de transferencia | 1 | 1 |
 | ARNr | 9  | 5 |

@@ -36,7 +36,7 @@ Priemro se utilizó la base de datos NCBI para buscar la secuencia cruda de *Sta
 Una vez analizada la calidad, se prosedió a utilizar la herramienta galaxy, en la cual se cambió el nombre a historial como se observa en la figura 1. 
 
 
-![Figura_1](imagenes/1.png)
+![datos](imagenes/1.png)
 
 
 

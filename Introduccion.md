@@ -40,7 +40,9 @@ Seguido, se cargó la secuencia a la plataforma como se observa en la figura 2 y
 !...
 !...
 
-Para configurar los output en la herramienta bakta, se dió clic en "Selección de los archivos de salida": "Selección de archivos de salida": Archivo de anotación en TSV Anotación y secuencia en GFF3 Secuencias de nucleótidos de características como FASTA Resumen como TXT Gráfico del resultado de la anotación como SVG. Como se observa en la figura 4
+Para configurar los output en la herramienta bakta, se dió clic en "Selección de los archivos de salida": "Selección de archivos de salida": Archivo de anotación en TSV Anotación y secuencia en GFF3 Secuencias de nucleótidos de características como FASTA Resumen como TXT Gráfico del resultado de la anotación como SVG. Como se observa en la figura 4.
+
+Posteriormente, se realizó el analisis de la secuencia en archirvo fasta. 
 
 
 
@@ -48,6 +50,10 @@ Para configurar los output en la herramienta bakta, se dió clic en "Selección 
 
 En la herramienta bakta, como se observa en la figura 5, se obtuvieron 44 contigs como entrada con una duración del borrador del genoma de 2.911.349 pb, un poco más corto que los 2.914.567 pb esperados, además, se encontró 2.717 CDS, un poco más que los 2.704 CDS esperados y de proteínas pequeñas 5 SORF, también, se encontró otros componetes como: 
 ![image](https://github.com/danycp5/Trabajo_final_Omicas_G2/assets/163198034/3babcc7c-bbf9-4ca9-b716-bea4322e3c21)
+
+En el analisis de la secuencia en archivo fasta se observó que exsistieron 2884 secuencias, en las cuales se encontraba ARNt, ARNm, ARNr, ncARN, CDS y SORF ( figura 6).
+
+
 
 
 

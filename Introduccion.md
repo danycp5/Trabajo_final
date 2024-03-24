@@ -44,7 +44,7 @@ Para configurar los output en la herramienta bakta, se dió clic en "Selección 
 
 Posteriormente, se realizó el analisis de la secuencia en archirvo fasta y se hizo un resumen de las anotaciones como TSV simples y legibles por humanos. Seguidamente, se realizó la anotación de la secuencia en GFF3 para describir genes y otras características de secuencias biológicas.
 
-
+Bakta ofrece una cantidad considerable de datos, principalmente relacionados con CDS o  ARNy, sin embargo, es probable que algunas anotaciones estructurales importantes, como los plásmidos, no estén incluidas es por eso que se realizó la identificación de plásmidos en los contigs previamente realizados, para esto se utilizó al herramienta **PlasmidFinder** (figura 10).
 
 ## RESULTADOS
 
@@ -53,9 +53,14 @@ En la herramienta bakta, como se observa en la figura 5, se obtuvieron 44 contig
 
 En el analisis de la secuencia en archivo fasta se observó que exsistieron 2884 secuencias, en las cuales se encontraba ARNt, ARNm, ARNr, ncARN, CDS y SORF ( figura 6). Además, en el resumen obtenido en las anotaciones se encuentró Sequence Id, Type, Start, Stop, Strand, Locus Tag, Gene, Product, DbXrefs, las cuales contenian 2.916 líneas ( figura 7).
 
-Se observó que existe 51k+ (número de líneas en el GFF), como se observa en la figura 8
+Se observó que existe 51k+ (número de líneas en el GFF), como se observa en la figura 8. 
 
+En la figura 9 se visualiza la trama de anotación del genoma circular, en la cual el círculo inicial muestra el contenido de GC en cada ventana deslizante de todas las secuencias, donde el color verde indica valores por encima del promedio y el color rojo indica valores por debajo. En el segundo círculo se muestra la tendencia del contenido de GC en tonos naranja y azul. Además, Se han representado todas las características en dos anillos que muestran la hebra delantera y trasera de afuera hacia adentro, con las secuencias codificantes en gris (los demás colores son complicados de diferenciar).
 
+Posterior al analisis en la herramienta PlasmidFinder se encontró 5 secuencias de plásmidos, los cuales estaban ubicados de la sigueinte manera: 3	están en contig00019, 1 en contig00002 y 1 en contig00024. 
+Donde todas las secuencias de plásmidos correspondientes a los plásmidos de *Staphylococcus aureus* están todas en contig00019, lo que hace que este contig probablemente sea un plásmido. Además, tiene una longitud de 30.347 pb.
+Así mismo, al comparar las secuencias asociadas con  *Staphylococcus aureus* en NCBI se encontró que CP000737, AP003139 (2 veces) corresponden a plásmidos de *Staphylococcus aureus*, AF503772 corresponde a un plásmido de *Enterococcus faecalis*, CP003584 corresponde a un plásmido de *Enterococcus faecium*.
+ 
 
 
 

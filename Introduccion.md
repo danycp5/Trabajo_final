@@ -47,7 +47,8 @@ Posteriormente, se realizó el analisis de la secuencia en archirvo fasta y se h
 Bakta ofrece una cantidad considerable de datos, principalmente relacionados con CDS o  ARNy, sin embargo, es probable que algunas anotaciones estructurales importantes, como los plásmidos, no estén incluidas es por eso que se realizó la identificación de plásmidos en los contigs previamente realizados, para esto se utilizó al herramienta **PlasmidFinder** (figura 10).
 Después, se utilizó el archivo plasmid.fasta que que contenía las secuencias que mejor coincidian del genoma utilizado y el archivo hit_in_genome.fasta ue contenía los genes plasmídicos que mejor coincidián de la base de datos. ( figura 15)
 
-Se utilizó la herramienta IntegronFinder para detectar integrones los cuales estan presentes en la anotación estructural adicional de la bacteria.
+Se utilizó la herramienta IntegronFinder para detectar integrones y ISEScan para detectar los elementos IS ( secuencia de inserción) los cuales estan presentes en la anotación estructural adicional de la bacteria.
+
 ## RESULTADOS
 
 En la herramienta bakta, como se observa en la figura 5, se obtuvieron 44 contigs como entrada con una duración del borrador del genoma de 2.911.349 pb, un poco más corto que los 2.914.567 pb esperados, además, se encontró 2.717 CDS, un poco más que los 2.704 CDS esperados y de proteínas pequeñas 5 SORF, también, se encontró otros componetes como: 
@@ -68,7 +69,26 @@ Así mismo, al comparar las secuencias asociadas con  *Staphylococcus aureus* en
 
 Los integrones son componentes genéticos que posibilitan a las bacterias ajustarse y desarrollarse rápidamente mediante la captura y expresión de genes nuevos. Un integron típico consta de un gen que codifica una enzima específica de recombinación (intI), un sitio de recombinación cercano (attI) donde se pueden insertar segmentos de genes, y un controlador de transcripción (Pc) que regula la actividad genética en estos segmentos. Para identificar integrones, se recurre a herramientas como IntegronFinder (Néron et al., 2022). En la figura 16 se puede observar que no se encontró encontrado elementos integrones en ningún contig,x, esto podría deberse ya que el genoma es demasiado estable o a que la calidad del ensamblaje no es lo suficientemente buena y se eliminaron algunas partes útiles para la detección de integrones. 
 
+En las figuras 17-21, se observó los resultados de la secuencia de inserción empleando la herramienta ISEScan, la cual permitió detectar los elementos de secuencia de inserción (IS), que es una breve secuencia de ADN que funciona como un elemento transponible básico. Estos IS son los más diminutos, pero también los más comunes de los elementos transponibles autónomos que se encuentran en los genomas bacterianos. Su código genético se limita únicamente a las proteínas relacionadas con la actividad de transposición, lo que los convierte en actores fundamentales en la estructura y la evolución de los genomas bacterianos.
 
+Ademas, como se observa en la figura 22 y 23, la herramienta permitió obtener la secuencia de aminoácidos ORF, detectectando así 20 elementos de insersión (IS), los cuales se encontraron agrupados como se observa en la tabla 2. 
+
+| Contig  | Numero de elemento IS |
+| ------------- | ------------- |
+| contig00001  | 2  |
+| contig00002 | 1 |
+| contig00003  | 2  |
+| contig00004 | 1 |
+| contig00005  | 1  |
+| contig00006 | 1 |
+| contig00009  | 3  |
+| contig00010 | 1|
+| contig00011 | 1  |
+| contig00012 | 1 |
+| contig00019  | 3  |
+| contig00027 | 1|
+| contig00032  | 1  |
+| contig00037 | 1 |
 
 ## CONCLUSIONES
 

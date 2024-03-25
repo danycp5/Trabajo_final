@@ -34,10 +34,14 @@ La infección causada por *Staphylococcus aureus* es de gran importancia clínic
 [Pipeline](https://app.diagrams.net/#Hdanycp5%2FTrabajo_final%2Fpipeline%2FDiagrama%20sin%20t%C3%ADtulo.drawio#%7B%22pageId%22%3A%22lsY_AHojMyWDu4EsEvxC%22%7D)
 
 ## MÉTODOLOGÍA
-Primero se cargó la secuencia e *Staphylococcus aureus* a la plataforma Galaxy como se observa en la figura 1, se cambió el nombre a historial como se observa en la figura 2.
+Primero se cargó la secuencia e *Staphylococcus aureus* a la plataforma Galaxy como se observa en la figura 1.
 ![Configuracion_de_bakta](imagenes/2.jpg)
+
+Se cambió el nombre a historial como se observa en la figura 2.
+
 ![Cambio_ de_nombre](imagenes/1.jpg)
-Después se realizó el analisis de calidad utilizando la herramientafastQC (figura 3) 
+Después se realizó el analisis de calidad utilizando la herramientafastQC (figura 3).
+
 ![analisis_calidad](imagenes/33.jpeg)
 
 Se realizó la configuración de la herramienta Bakta, la cual consistió en ir a  "Opciones de entrada/salida": y dar clic en  "La base de datos de bakta" y seleccionar la más reciente "La base de datos de amrfinderplus". Después, en la más reciente Archivo de parámetros "Seleccionar genoma en formato fasta": Archivo de contig En "Anotación opcional": "Mantener encabezado original del contig (--keep-contig-headers)": S ( ver figura 4).

@@ -163,7 +163,10 @@ En la salida de JBrowse se logró ver los genes, IS, plásmidos, etc. en los con
 ![visualización_genoma_JBrowse](imagenes/32.jpg)
 
 ## CONCLUSIONES
++ Mediante la plataforma virtual Galaxy, empleando la herramienta FastQC se evaluó la calidad de la secuencia de *Staphylococcus aureus*, determinándose que los parámetros analizados cumplen con los estándares.
 
++ Se realizó la anotación del genoma bacteriano de la secuencia de *Staphylococcus aureus* resistente a la meticilina, mediante la herramienta Bakta en la cual se logró encontrar la posición de los contings, además, se logró visualizar la posición del porcentaje de GC que poseía la secuencia. 
++ Se empleó el uso de  otras herramientas como plasmidFinder e IntegronFinder con el fin de econtrar plasmidos e integrones que normalmente en la anotación del genoma no suelen aparecer.
 
 
 ## REFERENCIAS

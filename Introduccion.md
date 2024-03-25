@@ -69,7 +69,7 @@ Para la visualización de la anotación se utilizó las idendificadas por Bakta,
 
 
 ## RESULTADOS
-El analisis de calidad con FastQc comprobó que la secuencia de *Staphylococcus aureus* cumplió con todos los estandares de calidad, demostrando que es una secuencia apta para el posterios analisis (Figura 14).
+El análisis de calidad con FastQc comprobó que la secuencia de *Staphylococcus aureus* cumplió con todos los estandares de calidad, demostrando que es una secuencia apta para el posterior análisis (Figura 14).
 ![Resultado_calidad](imagenes/34.jpeg)
 
 

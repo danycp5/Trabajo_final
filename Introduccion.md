@@ -28,14 +28,15 @@ La infección causada por *Staphylococcus aureus* es de gran importancia clínic
 ## OBJETIVOS
 + Evaluar la calidad de las secuecuencias de *Staphylococcus aureus* mediante la herramienta virtual Galaxy.
 + Elaborar el ensamblaje de la secuencia Empleando la herramienta virtual Bakta para modificar la secuencia de *Staphylococcus aureus*.
-+ Interpretar los resultados obtenidos.
-    
+  
 ## FLUJO DE TRABAJO
 
 [Pipeline](https://app.diagrams.net/#Hdanycp5%2FTrabajo_final%2Fpipeline%2FDiagrama%20sin%20t%C3%ADtulo.drawio#%7B%22pageId%22%3A%22lsY_AHojMyWDu4EsEvxC%22%7D)
 
 ## MÉTODOLOGÍA
 Primero se utilizó la base de datos NCBI para buscar la secuencia cruda de *Staphylococcus aureus*, después se realizó el analisis de calidad utilizando fastQc (figura 1) 
+![analisis_calidad](imagenes/33.jpeg)
+
 Una vez analizada la calidad, se procedió a utilizar la herramienta galaxy, en la cual se cambió el nombre a historial como se observa en la figura 2. 
 
 ![Cambio_ de_nombre](imagenes/1.jpg)
@@ -70,6 +71,9 @@ Para la visualización de la anotación se utilizó las idendificadas por Bakta,
 
 
 ## RESULTADOS
+El analisis de calidad con FastQc mostró 
+![Resultado_calidad](imagenes/34.jpeg)
+
 
 En la herramienta bakta, como se observa en la figura 5, se obtuvieron 44 contigs como entrada con una duración del borrador del genoma de 2.911.349 pb, un poco más corto que los 2.914.567 pb esperados.
 

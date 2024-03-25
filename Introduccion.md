@@ -158,7 +158,7 @@ Dectectandose también, las diferentes familias del IS ( tabla 3)
 | IS6 | 5|
 | ISL3 | 1|
 
-En la salida de JBrowse se loggró ver los genes, IS, plásmidos, etc. en los contigs, como se observa en la figura 32.
+En la salida de JBrowse se logró ver los genes, IS, plásmidos, etc. en los contigs, como se observa en la figura 32.
 
 ![visualización_genoma_JBrowse](imagenes/32.jpg)
 

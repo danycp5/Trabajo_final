@@ -78,7 +78,7 @@ En la herramienta bakta, como se observa en la figura 15, se obtuvieron 44 conti
 ![resumen_de_analisis](imagenes/5.jpg)
 
 
-Se encontró 2.717 CDS, un poco más que los 2.704 CDS esperados y de proteínas pequeñas 5 SORF, también, se encontró otros componetes como: 
+Se encontró 2.717 CDS, un poco más que los 2.704 CDS esperados y de proteínas pequeñas 5 SORF, también, se encontró otros componentes como: 
                                                                 
  | Comonetes  | Bakta | Hikichi et al2019 |
  | ------------- | ------------- |  ------------- |
@@ -88,7 +88,7 @@ Se encontró 2.717 CDS, un poco más que los 2.704 CDS esperados y de proteínas
  | mcRNA | 95  | sin información |
 
 
-En el análisis de la secuencia en archivo fasta se observó que exsistieron 2884 secuencias, en las cuales se encontraba ARNt, ARNm, ARNr, ncARN, CDS y SORF ( figura 16).
+En el análisis de la secuencia en archivo fasta se observó que existieron 2884 secuencias, en las cuales se encontraba ARNt, ARNm, ARNr, ncARN, CDS y SORF ( figura 16).
 
 ![resultados_nucleotid](imagenes/6.jpg)
 

@@ -63,7 +63,7 @@ Después, se utilizó el archivo plasmid.fasta que contenía las secuencias que 
 ![deteccion_integrones](imagenes/15.jpg) 
 
 Se utilizó la herramienta IntegronFinder para detectar integrones y ISEScan para detectar los elementos IS ( secuencia de inserción) los cuales estan presentes en la anotación estructural adicional de la bacteria.
-Para la visualización de la anotación se utilizó las idendificadas por Bakta, las secuencias de plásmidos identificadas por PlasmidFinder, los integrones identificados por IntegronFinder y los elementos IS identificados por ISEscan. Se utilizó la herramienta JBrowse, la cual necesitó que los archivos anteriormente mencionados esten en formato GFF y para esto se formateó las salidas de las secuerncias de los integrones y plasmidos como se muestra en las figuras 7-13.
+Para la visualización de la anotación se utilizó las idendificadas por Bakta, las secuencias de plásmidos identificadas por PlasmidFinder, los integrones identificados por IntegronFinder y los elementos IS identificados por ISEscan. Se utilizó la herramienta JBrowse, la cual necesitó que los archivos anteriormente mencionados esten en formato GFF y para esto se formateó las salidas de las secuencias de los integrones y plásmidos como se muestra en las figuras 7-13.
 
 ![visualización_anotacion](imagenes/24.jpg) ![visualización_anotacion](imagenes/25.jpg) ![visualización_anotacion](imagenes/26.jpeg) ![visualización_anotacion](imagenes/27.jpeg)![visualización_anotacion](imagenes/28.jpg) ![visualización_anotacion](imagenes/29.jpg)![visualización_anotacion](imagenes/30.jpg)
 
@@ -109,7 +109,7 @@ En las figuras 20 y 21 se observan los diferentes resultados que generó plasmid
 
 ![resultados_plasmidfinder](imagenes/11.jpg) ![resultados_plasmidfinder](imagenes/12.jpg)
 
-Posterior al analisis en la herramienta PlasmidFinder se encontró 5 secuencias de plásmidos, los cuales estaban ubicados de la sigueinte manera: 3	están en contig00019, 1 en contig00002 y 1 en contig00024. 
+Posterior al análisis en la herramienta PlasmidFinder se encontró 5 secuencias de plásmidos, los cuales estaban ubicados de la sigueinte manera: 3	están en contig00019, 1 en contig00002 y 1 en contig00024. 
 Donde todas las secuencias de plásmidos correspondientes a los plásmidos de *Staphylococcus aureus* están todas en contig00019, lo que hace que este contig probablemente sea un plásmido. Además, tiene una longitud de 30.347 pb.
 Así mismo, al comparar las secuencias asociadas con  *Staphylococcus aureus* en NCBI se encontró que CP000737, AP003139 (2 veces) corresponden a plásmidos de *Staphylococcus aureus*, AF503772 corresponde a un plásmido de *Enterococcus faecalis*, CP003584 corresponde a un plásmido de *Enterococcus faecium*.
 
@@ -149,7 +149,7 @@ Además, como se observa en la figura 30 y 31, la herramienta permitió obtener 
 | contig00037 | 1 |
                                                                   
 
-Dectectandose también, las diferentes familias del IS ( tabla 3)
+Dectectándose también, las diferentes familias del IS ( tabla 3)
 | familia IS  | elemento IS identificado |
 | ------------- | ------------- |
 | IS1182  |4 |

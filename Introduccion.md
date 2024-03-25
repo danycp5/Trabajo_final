@@ -42,8 +42,6 @@ Una vez analizada la calidad, se procedió a utilizar la herramienta galaxy, en 
 ![Cambio_ de_nombre](imagenes/1.jpg)
 
 
-
-
 Seguido, se cargó la secuencia a la plataforma como se observa en la figura 2 y se realizó la configuración de la herramienta Bakta, la cual consistió en ir a  "Opciones de entrada/salida": y dar clic en  "La base de datos de bakta" y seleccionar la más reciente "La base de datos de amrfinderplus". Después, en la más reciente Archivo de parámetros "Seleccionar genoma en formato fasta": Archivo de contig En "Anotación opcional": "Mantener encabezado original del contig (--keep-contig-headers)": S ( ver figura 3).
 
 ![carga_de_scuencia](imagenes/2.jpg)
@@ -56,26 +54,26 @@ Para configurar los output en la herramienta bakta, se dió clic en "Selección 
 
 Posteriormente, se realizó el análisis de la secuencia en archirvo fasta y se hizo un resumen de las anotaciones como TSV simples y legibles por humanos. Seguidamente, se realizó la anotación de la secuencia en GFF3 para describir genes y otras características de secuencias biológicas.
 
-Bakta ofrece una cantidad considerable de datos, principalmente relacionados con CDS o  ARNy, sin embargo, es probable que algunas anotaciones estructurales importantes, como los plásmidos, no estén incluidas es por eso que se realizó la identificación de plásmidos en los contigs previamente realizados, para esto se utilizó la herramienta **PlasmidFinder** (figura 10).
+Bakta ofrece una cantidad considerable de datos, principalmente relacionados con CDS o  ARNy, sin embargo, es probable que algunas anotaciones estructurales importantes, como los plásmidos, no estén incluidas es por eso que se realizó la identificación de plásmidos en los contigs previamente realizados, para esto se utilizó la herramienta **PlasmidFinder** (figura 5).
 
 ![Identificacio_plasmidfinder](imagenes/10.jpg)
 
-Después, se utilizó el archivo plasmid.fasta que contenía las secuencias que mejor coincidian del genoma utilizado y el archivo hit_in_genome.fasta ue contenía los genes plasmídicos que mejor coincidián de la base de datos ( figura 15).
+Después, se utilizó el archivo plasmid.fasta que contenía las secuencias que mejor coincidian del genoma utilizado y el archivo hit_in_genome.fasta ue contenía los genes plasmídicos que mejor coincidián de la base de datos ( figura 6).
 
 ![deteccion_integrones](imagenes/15.jpg) 
 
 Se utilizó la herramienta IntegronFinder para detectar integrones y ISEScan para detectar los elementos IS ( secuencia de inserción) los cuales estan presentes en la anotación estructural adicional de la bacteria.
-Para la visualización de la anotación se utilizó las idendificadas por Bakta, las secuencias de plásmidos identificadas por PlasmidFinder, los integrones identificados por IntegronFinder y los elementos IS identificados por ISEscan. Se utilizó la herramienta JBrowse, la cual necesitó que los archivos anteriormente mencionados esten en formato GFF y para esto se formateó las salidas de las secuerncias de los integrones y plasmidos como se muestra en las figuras 24-30.
+Para la visualización de la anotación se utilizó las idendificadas por Bakta, las secuencias de plásmidos identificadas por PlasmidFinder, los integrones identificados por IntegronFinder y los elementos IS identificados por ISEscan. Se utilizó la herramienta JBrowse, la cual necesitó que los archivos anteriormente mencionados esten en formato GFF y para esto se formateó las salidas de las secuerncias de los integrones y plasmidos como se muestra en las figuras 7-13.
 
 ![visualización_anotacion](imagenes/24.jpg) ![visualización_anotacion](imagenes/25.jpg) ![visualización_anotacion](imagenes/26.jpeg) ![visualización_anotacion](imagenes/27.jpeg)![visualización_anotacion](imagenes/28.jpg) ![visualización_anotacion](imagenes/29.jpg)![visualización_anotacion](imagenes/30.jpg)
 
 
 ## RESULTADOS
-El analisis de calidad con FastQc mostró 
+El analisis de calidad con FastQc comprobó que la secuencia de *Staphylococcus aureus* cumplió con todos los estandares de calidad, demostrando que es una secuencia apta para el posterios analisis (Figura 14).
 ![Resultado_calidad](imagenes/34.jpeg)
 
 
-En la herramienta bakta, como se observa en la figura 5, se obtuvieron 44 contigs como entrada con una duración del borrador del genoma de 2.911.349 pb, un poco más corto que los 2.914.567 pb esperados.
+En la herramienta bakta, como se observa en la figura 15, se obtuvieron 44 contigs como entrada con una duración del borrador del genoma de 2.911.349 pb, un poco más corto que los 2.914.567 pb esperados.
 
 ![resumen_de_analisis](imagenes/5.jpg)
 
@@ -90,24 +88,24 @@ Se encontró 2.717 CDS, un poco más que los 2.704 CDS esperados y de proteínas
  | mcRNA | 95  | sin información |
 
 
-En el análisis de la secuencia en archivo fasta se observó que exsistieron 2884 secuencias, en las cuales se encontraba ARNt, ARNm, ARNr, ncARN, CDS y SORF ( figura 6).
+En el análisis de la secuencia en archivo fasta se observó que exsistieron 2884 secuencias, en las cuales se encontraba ARNt, ARNm, ARNr, ncARN, CDS y SORF ( figura 16).
 
 ![resultados_nucleotid](imagenes/6.jpg)
 
 
-Además, en el resumen obtenido en las anotaciones se encontró Sequence Id, Type, Start, Stop, Strand, Locus Tag, Gene, Product, DbXrefs, las cuales contenían 2.916 líneas ( figura 7).
+Además, en el resumen obtenido en las anotaciones se encontró Sequence Id, Type, Start, Stop, Strand, Locus Tag, Gene, Product, DbXrefs, las cuales contenían 2.916 líneas ( figura 17).
 
 ![resultados_summary](imagenes/7.jpg)
 
-Se observó que existe 51k+ (número de líneas en el GFF), como se observa en la figura 8. 
+Se observó que existe 51k+ (número de líneas en el GFF), como se observa en la figura 18. 
 ![resultados_GFF3](imagenes/8.jpg)
 
-En la figura 9 se visualiza la trama de anotación del genoma circular, en la cual el círculo inicial muestra el contenido de GC en cada ventana deslizante de todas las secuencias, donde el color verde indica valores por encima del promedio y el color rojo indica valores por debajo. En el segundo círculo se muestra la tendencia del contenido de GC en tonos naranja y azul. Además, se han representado todas las características en dos anillos que muestran la hebra delantera y trasera de afuera hacia adentro, con las secuencias codificantes en gris (los demás colores son complicados de diferenciar).
+En la figura 19 se visualiza la trama de anotación del genoma circular, en la cual el círculo inicial muestra el contenido de GC en cada ventana deslizante de todas las secuencias, donde el color verde indica valores por encima del promedio y el color rojo indica valores por debajo. En el segundo círculo se muestra la tendencia del contenido de GC en tonos naranja y azul. Además, se han representado todas las características en dos anillos que muestran la hebra delantera y trasera de afuera hacia adentro, con las secuencias codificantes en gris (los demás colores son complicados de diferenciar).
 
 ![genoma_circular](imagenes/9.jpg)
 
 
-En las figuras 11 y 12 se observan los diferentes resultados que generó plasmidFinder, los cuales son archivos de texto que contienen la tabla de resultados y las alineaciones.
+En las figuras 20 y 21 se observan los diferentes resultados que generó plasmidFinder, los cuales son archivos de texto que contienen la tabla de resultados y las alineaciones.
 
 ![resultados_plasmidfinder](imagenes/11.jpg) ![resultados_plasmidfinder](imagenes/12.jpg)
 
@@ -115,21 +113,21 @@ Posterior al analisis en la herramienta PlasmidFinder se encontró 5 secuencias 
 Donde todas las secuencias de plásmidos correspondientes a los plásmidos de *Staphylococcus aureus* están todas en contig00019, lo que hace que este contig probablemente sea un plásmido. Además, tiene una longitud de 30.347 pb.
 Así mismo, al comparar las secuencias asociadas con  *Staphylococcus aureus* en NCBI se encontró que CP000737, AP003139 (2 veces) corresponden a plásmidos de *Staphylococcus aureus*, AF503772 corresponde a un plásmido de *Enterococcus faecalis*, CP003584 corresponde a un plásmido de *Enterococcus faecium*.
 
- Los resultados provenientes de los archivos  plasmid.fasta y el archivo hit_in_genome.fasta se observan en las figuras 13 y 14 respectivamente.
+ Los resultados provenientes de los archivos  plasmid.fasta y el archivo hit_in_genome.fasta se observan en las figuras 22 y 23 respectivamente.
  
 ![resultados_plasmmidFasta](imagenes/13.jpg) ![resultados_hit](imagenes/14.jpg) 
  
 
-Los integrones son componentes genéticos que posibilitan a las bacterias ajustarse y desarrollarse rápidamente mediante la captura y expresión de genes nuevos. Un integron típico consta de un gen que codifica una enzima específica de recombinación (intI), un sitio de recombinación cercano (attI) donde se pueden insertar segmentos de genes, y un controlador de transcripción (Pc) que regula la actividad genética en estos segmentos. Para identificar integrones, se recurre a herramientas como IntegronFinder (Néron et al., 2022). En la figura 16 se puede observar que no se encontró encontrado elementos integrones en ningún contig,x, esto podría deberse ya que el genoma es demasiado estable o a que la calidad del ensamblaje no es lo suficientemente buena y se eliminaron algunas partes útiles para la detección de integrones. 
+Los integrones son componentes genéticos que posibilitan a las bacterias ajustarse y desarrollarse rápidamente mediante la captura y expresión de genes nuevos. Un integron típico consta de un gen que codifica una enzima específica de recombinación (intI), un sitio de recombinación cercano (attI) donde se pueden insertar segmentos de genes, y un controlador de transcripción (Pc) que regula la actividad genética en estos segmentos. Para identificar integrones, se recurre a herramientas como IntegronFinder (Néron et al., 2022). En la figura 24 se puede observar que no se encontró encontrado elementos integrones en ningún contig,x, esto podría deberse ya que el genoma es demasiado estable o a que la calidad del ensamblaje no es lo suficientemente buena y se eliminaron algunas partes útiles para la detección de integrones. 
 
 ![resultados_integron_finder](imagenes/16.png) 
 
-En las figuras 17-21, se observó los resultados de la secuencia de inserción empleando la herramienta ISEScan, la cual permitió detectar los elementos de secuencia de inserción (IS), que es una breve secuencia de ADN que funciona como un elemento transponible básico. Estos IS son los más diminutos, pero también los más comunes de los elementos transponibles autónomos que se encuentran en los genomas bacterianos. Su código genético se limita únicamente a las proteínas relacionadas con la actividad de transposición, lo que los convierte en actores fundamentales en la estructura y la evolución de los genomas bacterianos.
+En las figuras 25-29, se observó los resultados de la secuencia de inserción empleando la herramienta ISEScan, la cual permitió detectar los elementos de secuencia de inserción (IS), que es una breve secuencia de ADN que funciona como un elemento transponible básico. Estos IS son los más diminutos, pero también los más comunes de los elementos transponibles autónomos que se encuentran en los genomas bacterianos. Su código genético se limita únicamente a las proteínas relacionadas con la actividad de transposición, lo que los convierte en actores fundamentales en la estructura y la evolución de los genomas bacterianos.
 
 ![secuencias_insercion](imagenes/17.jpg) ![secuencias_insercion](imagenes/18.jpg) ![secuencias_insercion](imagenes/19.jpg) ![secuencias_insercion](imagenes/20.jpg) ![secuencias_insercion](imagenes/21.jpg) 
 
 
-Además, como se observa en la figura 22 y 23, la herramienta permitió obtener la secuencia de aminoácidos ORF, detectectando así 20 elementos de insersión (IS), los cuales se encontraron agrupados como se observa en la tabla 2. 
+Además, como se observa en la figura 30 y 31, la herramienta permitió obtener la secuencia de aminoácidos ORF, detectectando así 20 elementos de insersión (IS), los cuales se encontraron agrupados como se observa en la tabla 2. 
 
 ![nucleotidos_ORF](imagenes/22.jpg)![aminoacidos_ORF](imagenes/23.jpg)
 
